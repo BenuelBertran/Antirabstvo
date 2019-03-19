@@ -1,0 +1,152 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  
+  &__title {
+    padding-bottom: 15px;
+    font-size: $bigger-size;
+  }
+  
+  &__subtitle {
+    margin-bottom: 50px;
+    
+    font-size: $big-size;
+    font-weight: $normal-weight;
+  }
+  
+  &__item {
+    display: flex;
+    margin-bottom: 45px;
+  }
+  
+  &__number {
+    margin-right: 7px;
+    
+    font-weight: $normal-weight;
+    color: $number-bg;
+  }
+  
+  &__icon {
+    position: relative;
+    
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+    border-radius: 6%;
+    
+    box-shadow: 0px 2px 10px -4px $shadow;
+    
+    &::after {
+      position: absolute;
+      content: "";
+
+      background-repeat: no-repeat;
+      background-size: contain;     
+    }
+    
+    &--formula {
+      &::after {
+        top: 10px;
+        left: 10px;
+        
+        width: 50px;
+        height: 50px;
+        
+        background-image: url(../img/png/formula-icon@1x.png);
+        
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url(../img/png/formula-icon@2x.png);
+        }
+      }
+    }
+
+    &--summary {
+      &::after {
+        top: 10px;
+        left: 20px;
+        
+        width: 50px;
+        height: 50px;
+        
+        background-image: url(../img/png/rassilka-icon@1x.png);
+        
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url(../img/png/rassilka-icon@2x.png);
+        }
+      }
+    }
+  
+    &--presentation {
+      &::after {
+        top: 15px;
+        left: 10px;
+        
+        width: 50px;
+        height: 50px;
+        
+        background-image: url(../img/png/sobesedovanie-icon@1x.png);
+        
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url(../img/png/sobesedovanie-icon@2x.png);
+        }
+      }
+    }
+  
+    &--publication {
+      &::after {
+        top: 10px;
+        left: 15px;
+        
+        width: 50px;
+        height: 50px;
+        
+        background-image: url(../img/png/rezume-like-icon@1x.png);
+        
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url(../img/png/rezume-like-icon@2x.png);
+        }
+      }
+    }
+  }
+  
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    padding: 0 5px;
+  }
+  
+  &__link {
+    font-weight: $big-weight;
+    color: $main-text;
+    text-decoration: underline;
+  }
+  
+  &__text {
+    font-weight: $big-weight;
+  }
+  
+  &__span {
+    font-weight: $low-weight;
+  }
+  
+  &__picture {
+    position: relative;
+    
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-right: 50px;
+    border-radius: 50%;
+    
+    overflow: hidden;
+  }
+  
+  &__image {
+    position: absolute;
+    left: -100px;
+    
+    max-width: 600px;
+  } 
+}

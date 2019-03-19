@@ -1,0 +1,13 @@
+doctype html
+html(lang="ru")
+  include meta/head
+  body(class="page")
+    include layout/header
+    main(class="container main page__main")
+      include modules/services
+    include layout/footer
+    div(class="fade" hidden)
+    div(class="page__wrapper")
+      div(class="modal page__call" hidden)
+      div(class="modal page__user" hidden)
+    script(src="js/all.min.js" async)

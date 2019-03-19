@@ -1,0 +1,20 @@
+//Основа
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: $mobile;
+
+  font-family: "Ubuntu", "Arial", sans-serif;
+  font-size: $normal-size;
+  line-height: $normal-height;
+  font-weight: $low-weight;
+  color: $main-text;
+  
+  background-color: $main-bg;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
